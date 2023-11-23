@@ -1,6 +1,8 @@
 # RegressionAnalysis
 
-The source of the dataset is Kaggle. To access the data, please refer to this link (https://www.kaggle.com/datasets/mirichoi0218/insurance). The dataset contains a total of 1,338 rows and includes both numerical and categorical predictor variables. The columns present are: age, sex, bmi, children, smoker, region, and charges. Below is an iniFal overview of the data:
+The source of the dataset is Kaggle. To access the data, please refer to this link: https://www.kaggle.com/datasets/mirichoi0218/insurance
+
+The dataset contains a total of 1,338 rows and includes both numerical and categorical predictor variables. The columns present are: age, sex, bmi, children, smoker, region, and charges. Below is an iniFal overview of the data:
 
 <img width="342" alt="Screenshot 2023-11-23 at 3 37 10 PM" src="https://github.com/eren-bardak/RegressionAnalysis/assets/131157575/3a6bbfba-ab02-41aa-b853-62f142f5e2e2">
 
