@@ -10,8 +10,6 @@ The dataset contains a total of 1,338 rows and includes both numerical and categ
 
 The primary objective was to identify the best fittinng model for predicting "charges". Initially, all potential predictors were considered, but after backward testing, "sex" was excluded for not being statistically significant. Despite the full model indicating a high adjusted R-square, the group considered the model complexity using AIC and BIC values, leaning more towards BIC due to its stricter penalization of model complexity. This approach led to the selection of the model 'charges ~ age + bmi + children + smoker’. However, further diagnostic tests highlighted issues like heteroscedasticity and violations of the normality assumption. Various attempts, including natural log transformations and outlier removals, were made to solve these problems, but they remained.
 
-Detecting outliers, points with high leverage and influence:
-
 <img width="476" alt="Screenshot 2023-11-23 at 3 44 58 PM" src="https://github.com/eren-bardak/RegressionAnalysis/assets/138029233/71a25223-58bb-4e53-b2f1-05f8cc066b1c">
 
 Considering the heteroscedasticity detected, the team pivoted to using robust standard errors. The HC0 model was selected given the large sample size, and though the full model's adjusted R-square was marginally higher, the decision was to conFnue with the simpler model, 'charges ~ age + bmi + children + smoker', due to its lower BIC. Notably, even aaer data transformations, the normality assumption remained a concern. Additionally, tests indicated potential non-linearity in the model, with attempts to log-transform predictors, like bmi, not delivering any substantial improvement. 
