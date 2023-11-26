@@ -1,6 +1,6 @@
 # RegressionAnalysis
 
-The source of the dataset is Kaggle. To access the data, please refer to this link: https://www.kaggle.com/datasets/mirichoi0218/insurance
+The source of the dataset is Kaggle: https://www.kaggle.com/datasets/mirichoi0218/insurance
 
 The dataset contains a total of 1,338 rows and includes both numerical and categorical predictor variables. The columns present are: age, sex, bmi, children, smoker, region, and charges. Below is an initial overview of the data:
 
@@ -8,7 +8,7 @@ The dataset contains a total of 1,338 rows and includes both numerical and categ
 
 # Summary of the Results
 
-The primary objective was to identify the best fittinng model for predicting "charges". Initially, all potential predictors were considered, but after backward testing, "sex" was excluded for not being statistically significant. Despite the full model indicating a high adjusted R-square, the group considered the model complexity using AIC and BIC values, leaning more towards BIC due to its stricter penalization of model complexity. This approach led to the selection of the model 'charges ~ age + bmi + children + smoker’. However, further diagnostic tests highlighted issues like heteroscedasticity and violations of the normality assumption. Various attempts, including natural log transformations and outlier removals, were made to solve these problems, but they remained.
+The primary objective was to identify the best fittinng model for predicting "charges". Initially, all potential predictors were considered, but after backward testing, "sex" was excluded for not being statistically significant. Despite the full model indicating a high adjusted R-square, considered the model complexity using AIC and BIC values, leaning more towards BIC due to its stricter penalization of model complexity. This approach led to the selection of the model 'charges ~ age + bmi + children + smoker’. However, further diagnostic tests highlighted issues like heteroscedasticity and violations of the normality assumption. Various attempts, including natural log transformations and outlier removals, were made to solve these problems, but they remained.
 
 + <img width="476" alt="Screenshot 2023-11-23 at 3 44 58 PM" src="https://github.com/eren-bardak/RegressionAnalysis/assets/138029233/71a25223-58bb-4e53-b2f1-05f8cc066b1c">
 
